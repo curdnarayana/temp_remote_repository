@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+</head>
+<body>
+	<h1>This is profile Page</h1>
+	{% if user.is_authenticated %}
+		<h3>Hello {{ user.first_name }}</h3>
+		<p>Father's Name : {{user.profile.father_name}}</p>
+		<p>Marks : {{user.profile.marks}}</p>
+		{% if games %}
+		<h4>Games:</h4><br>
+			{% for g in games %}
+				<p>{{g.gname}}</p>
+			{% endfor %}
+		{% else %}
+		<p>No Games Selected</p>
+		
+		{% endif %}
+		
+	{% else %}
+	<h1>You are Not logged In</h1>
+	{% endif %}
+	<a href="/home/">Home</a>
+</body>
+</html>

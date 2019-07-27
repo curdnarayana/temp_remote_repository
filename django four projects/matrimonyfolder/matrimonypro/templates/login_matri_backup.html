@@ -1,0 +1,231 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Login page</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    h1{
+        text-align: center;
+    }
+    body{
+        {#background-repeat: repeat-x;#}
+        {#background-repeat: no-repeat;#}
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+
+
+    }
+
+    #login-box{
+        position: absolute;
+        margin: 5% auto;
+        height: 400px;
+        width: 600px;
+        background:#fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+        margin-top: 10px;
+        margin-left: 420px;
+    }
+
+    .left-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 40px;
+        width: 300px;
+        height: 400px;
+    }
+
+
+    h1{
+        margin: 0px 0px 20px 0px;
+        font-weight: 300;
+        font-size: 28px;
+    }
+
+    input[type='text'],
+    input[type='password']
+    {
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 4px;
+        width:220px;
+        height: 32px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #aaaaaa;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        transition: 0.2s ease;
+
+    }
+    input[type="submit"] {
+        width: 100px;
+        height: 30px;
+        background: #f44336;
+        border: none;
+        border-radius: 2px;
+        color: #fff;
+        font-family:Century;
+        text-transform: uppercase;
+
+    }
+
+    input[type="reset"] {
+        width: 100px;
+        height: 30px;
+        background:#32508e;
+        border: none;
+        border-radius: 2px;
+        color: #fff;
+        font-family:Century;
+        text-transform: uppercase;
+
+    }
+
+    input[type="submit"]:hover,
+    input[type="submit"]:focus
+    {
+        background: #ff5722;
+        transition: 0.2s ease;
+    }
+
+
+    .right-box{
+        position:absolute;
+        top:0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 40px;
+        width: 300px;
+        height: 400px;
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRajVKenH4LiiIF6znr-xlhkq-re1vTXGCsqkNJ1mOji5Ur1e6KA") ;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .or{
+        position: absolute;
+        top: 180px;
+        left: 280px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background: #efefef;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .right-box .signinwith
+    {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 28px;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+
+    button.social,#a1{
+        margin-bottom: 20px;
+        width: 220px;
+        height: 36px;
+        border: none;
+        border-radius: 2px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 500;
+        transition: 0.2s ease;
+        cursor: pointer;
+
+
+    }
+    .facebook{
+        background: #32508e;
+    }
+    .twitter{
+        background: #55acee;
+    }
+    .google{
+        background: #dd4b39;
+    }
+    #a1:hover{
+        color: white;
+    }
+    #b1{
+        margin-top: 10px;
+        border: none;
+        background-color:green;
+        height: 32px;
+        border-radius: 3px;
+        font-family:Century;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .pa1{
+    color: white;
+    }
+    #b2{
+        margin-top: 10px;
+        background-color:lawngreen;
+        border: none;
+        height: 32px;
+        border-radius: 3px;
+        font-family:Century;
+        text-transform: uppercase;
+    }
+    #h11{
+        font-family: cursive;
+        font-size: 40px;
+        margin-top: 10px;
+        color: red;
+
+    }
+    h5{
+        color: red;
+        font-family: cursive;
+        margin-top: -10px;
+    }
+
+</style>
+
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5c1v0u52iQ-x_CgDjqWri1me7nJpe6w9jTlBracHkduUMliB6">
+<h1 id="h11">Welcome to Narayana Matrimonial</h1>
+<center><h5>India's No. 1 Matrimonial Site</h5></center>
+
+<div class="container">
+<div id="login-box">
+    <div class="left-box">
+        <h1> Sign Up</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ lform }}
+            <input type="submit" value="Sumbit">
+            <input type="reset" value="Reset">
+        <center><button id="b1"><a class="pa1" href="/password/">Forgot Password</a></button></center>
+        <center><button id="b2"><a class="pa1" href="/registration">Create New Accout</a></button></center>
+        </form>
+    </div>
+    <div class="right-box">
+        <span class="signinwith">Sign In With<br>Social Media</span>
+        <button class="social facebook"><a id="a1" href="https://www.facebook.com/" target="_blank"> Login With Facebook</a></button>
+        <button class="social twitter">Login With Twitter</button>
+        <button class="social google">Login with Google</button>
+    </div>
+    <div class="or">OR</div>
+</div>
+</div>
+</body>
+</html>

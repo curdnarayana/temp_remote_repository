@@ -1,0 +1,15 @@
+
+
+body{
+	
+	background-attachment: fixed;
+}
+
+#yantra_icon{
+	width:40px;
+	height:40px;
+}
+#nav_bar{
+	position:fixed;
+	top:0px;
+}

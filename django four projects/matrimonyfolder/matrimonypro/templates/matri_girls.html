@@ -1,0 +1,75 @@
+<body>
+{% if girls %}
+    <table border="2">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Father Name</th>
+                <th>Job</th>
+                <th>Salary</th>
+                <th>Mobile Number</th>
+                <th>Date Of Birth</th>
+                <th>Email Id</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+    {% for j in girls %}
+        <tbody>
+            <tr>
+                <td>{{ j.first_name }}</td>
+                <td>{{ j.father_name }}</td>
+                <td>{{ j.jobtype }}</td>
+                <td>{{ j.sal }}</td>
+                <td>{{ j.mobile }}</td>
+                <td>{{ j.dob }}</td>
+                <td>{{ j.email }}</td>
+                <td>{{ j.gender }}</td>
+            </tr>
+        </tbody>
+    {% endfor %}
+    </table>
+    {% else %}
+    <t4>Data is Not Found</t4>
+{% endif %}
+
+<a href="http://127.0.0.1:5655/clients/">Back</a>
+
+</body>
+
+{##}
+{##}
+{#<body>#}
+{#{% if girls %}#}
+{#    <table border="2">#}
+{#        <thead>#}
+{#            <tr>#}
+{#                <th>First Name</th>#}
+{#                <th>Father Name</th>#}
+{#                <th>Job</th>#}
+{#                <th>Salary</th>#}
+{#                <th>Mobile Number</th>#}
+{#                <th>Date Of Birth</th>#}
+{#                <th>Email ID</th>#}
+{#                <th>Gender</th>#}
+{#            </tr>#}
+{#        </thead>#}
+{#    {% for i in girls %}#}
+{#        <tbody>#}
+{#            <tr>#}
+{#                <td>{{ i.first_name }}</td>#}
+{#                <td>{{ i.father_name }}</td>#}
+{#                <td>{{ i.jobtype }}</td>#}
+{#                <td>{{ i.sal }}</td>#}
+{#                <td>{{ i.mobile }}</td>#}
+{#                <td>{{ i.dob }}</td>#}
+{#                <td>{{ i.email }}</td>#}
+{#                <td>{{ i.gender }}</td>#}
+{#            </tr>#}
+{#        </tbody>#}
+{#    {% endfor %}#}
+{##}
+{#    </table>#}
+{#    {% else %}#}
+{#    <t4>Data is not found</t4>#}
+{#{% endif %}#}
+{#</body>#}

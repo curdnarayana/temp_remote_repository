@@ -1,0 +1,19 @@
+from django.shortcuts import render
+def home(request):
+    return render(request,'BittuApp/home.html')
+def history(request):
+    return render(request,'BittuApp/history.html')
+def management(request):
+    return render(request,'BittuApp/management_committe.html')
+def our_mission(request):
+    return render(request,'BittuApp/our_mission.html')
+def rules(request):
+    return render(request,'BittuApp/rules.html')
+def sportiva(request):
+    return render(request,'BittuApp/soportiva.html')
+def exubarence(request):
+    return  render(request,'BittuApp/exubarence.html')
+def about(request):
+    return render(request,'BittuApp/about.html')
+def events(request):
+    return render(request,'BittuApp/events.html')

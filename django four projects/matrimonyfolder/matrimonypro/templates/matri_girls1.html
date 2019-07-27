@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Girls Data</title>
+    <style>
+         *{
+    margin: 0;
+    }
+    .main{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://i.ytimg.com/vi/pc5FpSzm4_E/maxresdefault.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+        #h21{
+            color: #fff;
+            font-size: 25px;
+            text-align: center;
+        }
+        table{
+            color: #fff;
+            text-align: center ;
+            margin-top: 20px;
+        }
+        #a1{
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <h2 id="h21">Girls details are...</h2>
+    {% if girls %}
+        <center>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Father Name</th>
+                    <th>Job</th>
+                    <th>Salary</th>
+                    <th>Date of Birth</th>
+                    <th>Mobile</th>
+                    <th>Email ID</th>
+                </tr>
+            </thead>
+        {% for i in girls %}
+            <tbody>
+                <tr>
+                    <td>{{ i.first_name }}</td>
+                    <td>{{ i.father_name }}</td>
+                    <td>{{ i.jobtype }}</td>
+                    <td>{{ i.sal }}</td>
+                    <td>{{ i.dob }}</td>
+                    <td>{{ i.mobile }}</td>
+                    <td>{{ i.email }}</td>
+                </tr>
+            </tbody>
+        {% endfor %}
+        </table>
+        <a id="a1" href="/clients/">Back</a>
+</center>
+        {% else %}
+            <h1>Boys data is not available</h1>
+            <a id="a1" href="/clients/">Back</a>
+    {% endif %}
+
+</div>
+</body>
+</html>

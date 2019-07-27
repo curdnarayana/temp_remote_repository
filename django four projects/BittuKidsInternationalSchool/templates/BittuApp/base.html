@@ -1,0 +1,76 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/home_style.css" %}">
+</head>
+<body>
+<h1>Hello Narayana</h1>
+<h1 id="logo">Bittashgu Kids public school</h1>
+<nav>
+    <div class="main">
+	<ul>
+	 <li><a href="/#/">Home</a></li>
+	 <li><a href="/aboutus/">AboutUs</a>
+	  <ul>
+	    <li><a href="/history/">History</a></li>
+		<li><a href="/management/">Management Committe</a></li>
+		<li><a href="/ourmission/">Our Mission</a></li>
+	  </ul>
+	 </li>
+        <li><a href="/academics/">Academics</a>
+	  <ul>
+	    <li><a href="/rules/">Rules</a></li>
+	  </ul>
+	 </li>
+        <li><a href="/gallery/">Gallary</a>
+	  <ul>
+          <li><a href="/images/">Images</a>
+		 <ul>
+		   <li><a href="/classes12/">Classes 1&2</a></li>
+		   <li><a href="/classes35/">Classes 3&5</a></li>
+		 </ul>
+		</li>
+	  </ul>
+	 </li>
+        <li><a href="/events/">Events</a>
+	  <ul>
+	    <li><a href="/soportiva/">Sportiva</a></li>
+		<li><a href="/exubarence/">Exubarence</a></li>
+          <li><a href="/panorama/">Panorama</a>
+		 <ul>
+		   <li><a href="/about/">About</a></li>
+		   <li><a href="/events/">Events</a></li>
+		   <li><a href="/gallary/">Gallary</a></li>
+		 </ul>
+		</li>
+	  </ul>
+	 </li>
+	 <li><a href="/regform/">Reg.form</a></li>
+        <li><a href="/contactus/">ContactUs</a>
+	   <ul>
+	    <li><a href="/atschool/">At School</a></li>
+           <li><a href="/careers/">Carrers</a>
+		 <ul>
+		  <li><a href="/current/">Current</a></li>
+		  <li><a href="/applynow/">Apply Now</a></li>
+		 </ul>
+		</li>
+	   </ul>
+	 </li>
+	 <li><a href="/download/">Download</a></li>
+   </ul>
+   </div>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+
+<section>
+    <p> © Bkis.com All Rights Reserved.<br>Designed by mithilesh yadav Pvt. Ltd.</p>
+</section>
+</body>
+</html>

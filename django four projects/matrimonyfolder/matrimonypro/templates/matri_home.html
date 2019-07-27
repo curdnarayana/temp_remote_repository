@@ -1,0 +1,193 @@
+<html>
+<head>
+    <title>WelCome Matrimony Home Page</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Century Gothic";
+    }
+    header{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://i.ytimg.com/vi/pc5FpSzm4_E/maxresdefault.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    ul{
+        list-style-type: none;
+        float: right;
+        margin-top: 25px;
+    }
+    ul li{
+        display: inline-block;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+    }
+    ul li a:hover{
+        background-color: #fff;
+        color: #000 ;
+    }
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+    }
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        color: #fff;
+        font-size: 25px;
+
+    }
+    .button{
+        position: absolute;
+        top: 65%;
+        left: 38%;
+    }
+    .btn{
+        border: 1px solid #fff;
+        padding: 10px 30px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .btn:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .txt{
+        position: absolute;
+        top: 72%;
+        left: 25%;
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #h11{
+        color: red;
+        font-family: "Century Gothic";
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="main">
+        <ul>
+            <li class="active"><a href="#">Home</a> </li>
+            <li><a href="#">Services</a> </li>
+            <li><a href="#">Clients</a> </li>
+            <li><a href="#">Gallery</a> </li>
+            <li><a href="#">Feedbacks</a> </li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>Narayana Matrimony</h1>
+    </div>
+    <div class="button">
+        <a href="#" class="btn">Watch Videos</a>
+        <a href="#" class="btn">Watch Images</a>
+    </div>
+
+    <div class="txt">
+        <pre>
+            Narayana Matrimony started 100years ago, We are the no.1 matrimonial website in the world.
+        </pre>
+    </div>
+</header>
+
+{#<hader1>#}
+{#    <h1 id="h11">Clients</h1>#}
+{##}
+{#<div class="container" style="background:bisque">#}
+{##}
+{#  <div id="myCarousel" class="carousel slide" data-ride="carousel">#}
+{#    <!-- Indicators -->#}
+{#    <ol class="carousel-indicators">#}
+{#      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>#}
+{#      <li data-target="#myCarousel" data-slide-to="1"></li>#}
+{#      <li data-target="#myCarousel" data-slide-to="2"></li>#}
+{#    </ol>#}
+{##}
+{#    <!-- Wrapper for slides -->#}
+{#    <div class="carousel-inner">#}
+{##}
+{#      <div class="item active">#}
+{#        <a href="static/images/mahesh.jpg" target="_blank">#}
+{#          <img src="{% static  'images/mahesh.jpg' %}"  alt="No Mahesh Img"#}
+{#             style="width:50%; height:40%; margin: auto;">#}
+{#        </a>#}
+{##}
+{#        <div class="carousel-caption">#}
+{#          <h3>Mahesh</h3>#}
+{#          <p>He is most handsome person in tollywood..!</p>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{##}
+{#      <div class="item">#}
+{##}
+{#       <a href="static/images/ntr.jpg" target="_blank">#}
+{#            <img src="{% static  'images/ntr.jpg' %}"  alt="No NTR Img"#}
+{#                 style="width:50%; height:40%; margin: auto;">#}
+{#        </a>#}
+{##}
+{#        <div class="carousel-caption">#}
+{#          <h3>NTR</h3>#}
+{#          <p>He is a good dancer in the tolywood!</p>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{#      <div class="item">#}
+{#        <a href="static/images/Sachin.jpg" target="_blank">#}
+{#            <img src="{% static  'images/Sachin.jpg' %}"  alt="No Sachin Img"#}
+{#                 style="width:50%; height:40%; margin: auto;">#}
+{#        </a>#}
+{#        <div class="carousel-caption">#}
+{#          <h3>Sachin</h3>#}
+{#          <p>He is god of cricket</p>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{##}
+{#        <div class="item">#}
+{#        <a href="static/images/charan.jpg" target="_blank">#}
+{#            <img src="{% static  'images/charan.jpg' %}"  alt="No Sachin Img"#}
+{#                 style="width:50%; height:40%; margin: auto;">#}
+{#        </a>#}
+{#        <div class="carousel-caption">#}
+{#          <h3>Sachin</h3>#}
+{#          <p>He is god of cricket</p>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{##}
+{#    </div>#}
+{##}
+{#    <!-- Left and right controls -->#}
+{#    <a class="left carousel-control" href="#myCarousel" data-slide="prev">#}
+{#      <span class="glyphicon glyphicon-chevron-left"></span>#}
+{#      <span class="sr-only">Previous</span>#}
+{#    </a>#}
+{#    <a class="right carousel-control" href="#myCarousel" data-slide="next">#}
+{#      <span class="glyphicon glyphicon-chevron-right"></span>#}
+{#      <span class="sr-only">Next</span>#}
+{#    </a>#}
+{#  </div>#}
+{#</div>#}
+{##}
+{##}
+
+
+</hader1>
+</body>
+</html>

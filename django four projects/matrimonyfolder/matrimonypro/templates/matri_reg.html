@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Mat</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Arial;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://i.ytimg.com/vi/pc5FpSzm4_E/maxresdefault.jpg");
+        background-size: cover;
+    }
+    label{
+        color: #fff;
+    }
+    .h{
+        text-align: center;
+        color: #fff;
+    }
+    b{
+        color: #f44336;
+    }
+    .checkbox{
+        margin-top: -10px;
+    }
+</style>
+</head>
+<body>
+<h1 class="h">Sign Up Now</h1>
+<h4 class="h">Please fill this form to create new account</h4>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}<br>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">By creating accout, You agree <b>Terms and Conditions</b>
+                    </label>
+
+                </div>
+
+                <center>
+                <input type="submit" value="Submit" class="btn btn-success">
+                <input type="reset" value="Reset" class="btn btn-danger">
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
